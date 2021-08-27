@@ -1,7 +1,9 @@
 import requests
 import json
+import api_key
 
-api_key = 'AIzaSyCGMYii3NryUpvfv2RvOmw-elef-fpTqU4'
+api = api_key.api_key
+
 url = "https://safebrowsing.googleapis.com/v4/threatMatches:find"
 payload = {
     "client": {
@@ -17,7 +19,7 @@ payload = {
         ]
     }
 }
-params = {'key': api_key}
+params = {'key': api}
 r = requests.post(url, params=params, json=payload)
 # Print response
 print(r)
