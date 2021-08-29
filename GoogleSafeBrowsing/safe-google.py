@@ -12,10 +12,11 @@ payload = {
     },
     "threatInfo": {
         "threatTypes":      ["MALWARE", "SOCIAL_ENGINEERING"],
-        "platformTypes":    ["WINDOWS"],
+        "platformTypes":    ["WINDOWS","LINUX","ANDROID"],
         "threatEntryTypes": ["URL"],
         "threatEntries": [
-            {"url": "http://wrthwtj.duckdns.org"}
+            {"url": "http://www.yahoo.com/"},
+            {"url": "http://malware.testing.google.test/testing/malware/"}
         ]
     }
 }
@@ -23,4 +24,4 @@ params = {'key': api}
 r = requests.post(url, params=params, json=payload)
 # Print response
 print(r)
-print(r.json())
+print(format(r.json()))
