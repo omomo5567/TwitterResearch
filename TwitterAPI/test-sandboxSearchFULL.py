@@ -1,4 +1,3 @@
-
 import json
 import key
 
@@ -10,7 +9,7 @@ url = 'https://api.twitter.com/1.1/tweets/search/fullarchive/test.json' #envname
 
 #Enedpointへ渡すパラメーター
 params ={
-         'query' : "from:omomo5567" ,  # 検索キーワード ,
+         'query' : "from: user ID"" ,  # 検索キーワード fromの後にユーザーIDを入れるとそのユーザーを対象とする。
          'maxResults': 100 ,   # 取得するtweet数
         }
 
