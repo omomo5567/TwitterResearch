@@ -7,11 +7,11 @@ api = api_key.api_key
 url = "https://safebrowsing.googleapis.com/v4/threatMatches:find"
 payload = {
     "client": {
-        "clientId":      "yourcompanyname",
+        "clientId":      "omomo",
         "clientVersion": "1.5.2"
     },
     "threatInfo": {
-        "threatTypes":      ["MALWARE", "SOCIAL_ENGINEERING"],
+        "threatTypes":      ["MALWARE", "SOCIAL_ENGINEERING","THREAT_TYPE_UNSPECIFIED"],
         "platformTypes":    ["WINDOWS","LINUX","ANDROID"],
         "threatEntryTypes": ["URL"],
         "threatEntries": [

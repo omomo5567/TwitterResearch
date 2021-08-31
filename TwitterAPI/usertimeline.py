@@ -25,6 +25,7 @@ req = twitter.get(url, params = params)
 
 print('----------------------------------------------------')
 
+"""
 if req.status_code == 200:
     timeline = json.loads(req.text)
     for tweet in timeline:
@@ -33,5 +34,8 @@ if req.status_code == 200:
         print('----------------------------------------------------')
 else:
     print("ERROR: %d" % req.status_code)
+"""
+#t=json.loads(req.text)
+#print(t)
 
-mongo_id=mongo.mongo(req)
+mongo_id=mongo.mongo(req.text)
