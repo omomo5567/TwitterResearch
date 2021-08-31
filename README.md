@@ -3,6 +3,12 @@
 
 # 各コードについて
 
+### mongo.py
+MongoDBのテストプログラム。
+
+### test-openURL
+短縮URLの展開をするテストプログラム。
+
 ## GoogleSafeBrowsing
 ### safe-google.py
 Google Safe Browsing APIへURLを送り、そのURLが安全かどうかを返す。
@@ -16,9 +22,3 @@ Google Safe Browsing APIへURLを送り、そのURLが安全かどうかを返�
 Premium(Sandbox版)を使い、ツイートのフルアーカイブ検索をする。
 ### usertimeline.py
 IDを指定したユーザーのユーザータイムラインを取得する。
-
-### mongo.py
-MongoDBのテストプログラム。
-
-### test-openURL
-短縮URLの展開をするテストプログラム。
